@@ -24,10 +24,7 @@
     <script src='http://mat1.gtimg.com/libs/jquery/1.12.0/jquery.js'></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            window.oncontextmenu=function(e){
-                //取消默认的浏览器自带右键 很重要！！
-                e.preventDefault();
-            }
+            window.oncontextmenu=function(e){e.preventDefault();}
             var a_index = 0;
             $("body").click(function(e){
                 var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
