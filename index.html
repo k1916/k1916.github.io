@@ -1,5 +1,105 @@
-<html><h1>recived!</h1></html>
-<form action = '' >
-	account<input type = 'text' placeholder = 'username'>
-	password<input type = 'password'>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>论文题目_0209</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+        input{
+            border: 0;
+            outline: 0;
+        }
+    </style>
+</head>
+<body style="background-color: #969896" οncοntextmenu=self.event.returnValue=false onselectstart="return false" >
+    <script src='http://mat1.gtimg.com/libs/jquery/1.12.0/jquery.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            window.oncontextmenu=function(e){
+                //取消默认的浏览器自带右键 很重要！！
+                e.preventDefault();
+            }
+            var a_index = 0;
+            $("body").click(function(e){
+                var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+                var $i = $("<span/>").text(a[a_index]);
+                a_index = (a_index + 1) % a.length;
+                var x = e.pageX,y = e.pageY;
+                $i.css({
+                    "z-index": 99999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "#ff6651"
+                });
+                $("body").append($i);
+                $i.animate({"top": y-180,"opacity": 0},1500,function() {
+                    $i.remove();
+                });
+            });
+        });
+</script>
+    <div style="width: 60%; background-color: white; margin-left: auto; margin-right: auto; padding-left: 5%; padding-right: 5%">
+        </br><h2 style="text-align: center">外币债务是否促进上市公司创新</h2></br>
+        <p>
+            <b>相关理论：</b>
+            企业持有外币债务可以对冲外汇风险并且一定程度降低融资成本（郭飞 等，2018）<sup>参考文献1</sup>，从而支撑研发资金投入而促进企业创新。
+        </p></br>
+        <p>
+            <b>文献切割：</b>
+            目前仅有文献研究外汇风险对冲促进企业创新（郝项超 等，2019）<sup>参考文献2</sup>，但是仅仅研究了外汇衍生品的使用，没有研究外币资产或者负债对企业创新行为的影响。本文拟研究外币负债或者外币资产的持有对企业创新行为的影响。
+        </p></br>
+        <p>
+            <b>假设：</b>
+            1、持有外币债务可以促进企业创新。</br>&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp 2、外币负债率越高，促进创新越明显。
+        </p></br>
+        <p>
+            <b>因变量选取：</b>
+             1、企业 发明、实用型和外观专利的申请数量。</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2、企业 发明、实用型和外观专利的授权数量。
+        </p></br>
+        <p>
+            <b>自变量选取：</b>
+            1、企业是否持有外币债务</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2、企业的外币债务负债率
+        </p></br>
+        <p>
+            <b>控制变量：</b>
+            是否使用外汇衍生品，境外收入，资产负债率，规模等（待定）。
+        </p></br>
+        <p>
+            <b>数据选取：</b>
+            选取2011-2015年A股非ST非金融非地产企业。外币负债情况，衍生品使用情况从公司年报中手工收集，其他数据直接使用数据库。目前正在从年报中收集数据。
+        </p></br>
+        <b>目前与题目相关的参考文献：</b></br>
+        <p style="font-size: 90%">
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=2&CurRec=1&recid=&FileName=JRYJ201803009&DbName=CJFDLAST2018&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[1]郭飞,游绘新,郭慧敏.为什么使用外币债务?——中国上市公司的实证证据[J].金融研究,2018(03):137-154.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=3&CurRec=1&recid=&FileName=SJJJ201909008&DbName=CJFDLAST2019&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[2]郝项超,梁琪.外汇风险对冲能否促进中国上市公司创新[J].世界经济,2019,42(09):151-172.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=6&CurRec=2&recid=&FileName=SJJJ201807005&DbName=CJFDLAST2018&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[3]王雅琦,卢冰.汇率变动、融资约束与出口企业研发[J].世界经济,2018,41(07):75-97.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=9&CurRec=1&recid=&FileName=JJYJ201209004&DbName=CJFD2012&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[4]郭飞.外汇风险对冲和公司价值:基于中国跨国公司的实证研究[J].经济研究,2012,47(09):18-31.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=12&CurRec=1&recid=&FileName=JRYJ201901005&DbName=CJFDLAST2019&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[5]毛其淋.外资进入自由化如何影响了中国本土企业创新?[J].金融研究,2019(01):72-90.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=18&CurRec=1&recid=&FileName=GGYY202001006&DbName=CJFDAUTO&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[6]李春涛,闫续文,宋敏,杨威.金融科技与企业创新——新三板上市公司的证据[J].中国工业经济,2020(01):81-98.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=21&CurRec=1&recid=&FileName=GGYY201908010&DbName=CJFDLAST2019&DbCode=CJFQ&yx=A&pr=&URLID=11.3536.f.20190820.1041.020&bsm=QS0101;">[7]刘志东,高洪玮.中国制造业出口对美国企业创新的影响[J].中国工业经济,2019(08):174-192.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=24&CurRec=1&recid=&FileName=SJJJ201811006&DbName=CJFDLAST2019&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[8]刘灿雷,康茂楠,邱立成.外资进入与内资企业利润率:来自中国制造业企业的证据[J].世界经济,2018,41(11):98-120.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=27&CurRec=1&recid=&FileName=SJJJ201904005&DbName=CJFDLAST2019&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0101;">[9]杨连星,沈超海,殷德生.对外直接投资如何影响企业产出[J].世界经济,2019,42(04):77-100.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=30&CurRec=2&recid=&FileName=TSJJ201804006&DbName=CJFDLAST2019&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QSS0103;">[10]杨继东,赵文哲,赵奇锋.政治关联促进还是抑制企业创新?[J].经济学报,2018,5(04):136-176.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=33&CurRec=2&recid=&FileName=LKGP201803018&DbName=CJFDLAST2018&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0102;">[11]田轩,孟清扬.股权激励计划能促进企业创新吗[J].南开管理评论,2018,21(03):176-190.</a></br>
+            <a target="_blank" href="https://kns.cnki.net/kns/detail/detail.aspx?QueryID=36&CurRec=1&recid=&FileName=CQGS201812005&DbName=CJFDLAST2019&DbCode=CJFQ&yx=&pr=&URLID=&bsm=QS0104;">[12]谢非,方璐.外币债务对企业价值的影响研究——基于我国非金融类上市公司面板数据[J].重庆理工大学学报(社会科学),2018,32(12):40-49.</a></br>
+        </p></br>
+    </div>
+</body>
+<noscript>
+<iframe scr="*.htm"></iframe>
+</noscript>
+</html>
